@@ -1,0 +1,25 @@
+{
+    "name": "vscode-pkg-config",
+    "displayName": "vscode-pkg-config",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pc",
+            "aliases": ["pkg-config", "pc"],
+            "extensions": [".pc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pc",
+            "scopeName": "source.pc",
+            "path": "./syntaxes/pc.tmLanguage.json"
+        }]
+    }
+}
